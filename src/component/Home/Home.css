@@ -5,11 +5,13 @@
 }
 
 .img {
-    width: 50%;
+    width: 100%;
+    margin-right: 20px;
+    padding: 20px;
 }
 
 .title {
-    display: 100%;
+    width: 80%;
 
 }
 
@@ -28,4 +30,11 @@ h1 {
 .title-2nd-part {
     color: cornflowerblue;
 
+}
+
+.product-info {
+    width: 80%;
+    text-align: justify;
+    padding: 10px;
+    margin-left: 50px;
 }

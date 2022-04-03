@@ -6,13 +6,16 @@ import './Reviews.css'
 const Reviews = () => {
     const [users, setUsers] = useReview();
     return (
-        <div className='carts'>
-            {
-                users.map(user => <User
-                    key={user.id}
-                    user={user}
-                ></User>)
-            }
+        <div>
+            <h1 className='review-title'>Customers Review : </h1>
+            <div className='carts'>
+                {
+                    users.map(user => <User
+                        key={user.id}
+                        user={user}
+                    ></User>)
+                }
+            </div>
         </div>
     );
 };

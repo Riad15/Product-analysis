@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Reviews from '../Reviews/Reviews';
+import User from '../User/User';
 import './Home.css'
 
-const Home = () => {
+const Home = (props) => {
     return (
         <div>
             <div className='home-container'>
@@ -16,7 +18,10 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <Reviews></Reviews>
+                <h1 className='review-title'>Customers Review : </h1>
+                <div className='carts'>
+                    <h1>hwllo</h1>
+                </div>
             </div>
         </div>
     );
