@@ -1,12 +1,14 @@
 import React from 'react';
+import MyBarChart from '../MybarChart/MyBarChart';
 import MylineChart from '../myLineChart/MylineChart';
+import './Deshboard.css'
 
 const Deshboard = () => {
 
     return (
-        <div>
-            <h1>this is desh bord</h1>
+        <div className='chart'>
             <MylineChart></MylineChart>
+            <MyBarChart></MyBarChart>
         </div>
     );
 };
