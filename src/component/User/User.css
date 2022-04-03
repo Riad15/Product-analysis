@@ -1,0 +1,33 @@
+.cart {
+    top: 0;
+    width: 350px;
+    padding: 30px 20px;
+    margin-left: 10px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    margin: 10px 10px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.name img {
+    width: 140px;
+    border-radius: 10px;
+}
+
+.name p {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+p {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+}
