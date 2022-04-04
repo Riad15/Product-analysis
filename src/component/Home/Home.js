@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useReview from '../../hooks/useReview'
 import User from '../User/User';
 import './Home.css'
@@ -6,6 +7,11 @@ import './Home.css'
 const Home = (props) => {
     const [users, setUsers] = useReview();
     const shortUsers = users.slice(0, 3);
+    const navigate = useNavigate();
+    const showReviews = () => {
+        const path = '/reviews';
+        navigate(path)
+    }
     return (
         <div>
             <div className='home-container'>
@@ -29,6 +35,11 @@ const Home = (props) => {
                     }
 
                 </div>
+                <div className='btn-container'>
+                    <button className='btn' onClick={showReviews} >show Reviews</button>
+                </div>
+
+
             </div>
         </div>
     );
