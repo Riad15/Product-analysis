@@ -1,6 +1,10 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## create a useer comment section 
+## react routin header section 
+## create two react chaart (i) line chaer (ii) pai chart 
+## add to blog section hare is some importen topics discrive
 
 ## Available Scripts
 
