@@ -1,5 +1,6 @@
 import React from 'react';
-import useReview from '../../useReview';
+import useReview from '../../hooks/useReview';
+
 import User from '../User/User';
 import './Reviews.css'
 

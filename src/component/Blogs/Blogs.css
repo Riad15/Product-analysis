@@ -1,0 +1,17 @@
+.container div {
+    border: solid 2px lightcoral;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: antiquewhite;
+}
+
+.diffrent {
+    display: flex;
+    border: none;
+}
+
+p {
+    text-align: justify;
+    font-weight: 500;
+}
