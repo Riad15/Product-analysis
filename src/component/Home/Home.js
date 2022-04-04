@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Reviews from '../Reviews/Reviews';
+import useReview from '../../hooks/useReview'
 import User from '../User/User';
 import './Home.css'
 
 const Home = (props) => {
+    const [users, setUsers] = useReview();
+    const shortUsers = users.slice(0, 3);
     return (
         <div>
             <div className='home-container'>
@@ -20,7 +21,13 @@ const Home = (props) => {
             <div>
                 <h1 className='review-title'>Customers Review : </h1>
                 <div className='carts'>
-                    <h1>hwllo</h1>
+                    {
+                        shortUsers.map(user => <User
+                            key={user.id}
+                            user={user}
+                        ></User>)
+                    }
+
                 </div>
             </div>
         </div>
